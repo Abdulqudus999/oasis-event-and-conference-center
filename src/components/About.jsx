@@ -37,8 +37,13 @@ const About = () => {
         </ul>
       </div>
       <div className='flex gap-6 justify-around mt-10 px-6'>
-        <img src={aboutImg1} className='h-[200px] w-[400px] rounded-3xl' alt="" />
-        <img src={aboutImg2} className='h-[200px] w-[400px] rounded-3xl' alt="" />
+        <div className='w-full md:w-1/2 lg:w-1/3'>
+          <img src={aboutImg1} className='w-full h-auto rounded-lg shadow-md' alt="" />
+        </div>
+        <div className='w-full md:w-1/2 lg:w-1/3'>
+          <img src={aboutImg2} className='w-full h-auto rounded-lg shadow-md' alt="" />
+        </div>
+        
       </div>
     </section>
   )
