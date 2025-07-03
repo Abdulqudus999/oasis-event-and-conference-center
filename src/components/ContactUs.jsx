@@ -77,27 +77,27 @@ const ContactUs = () => {
     </h2>
         <div className="flex flex-col md:flex-row items-center gap-8 w-[500px] md:w-[700px]">
             <div className="w-full">
-                <label className="text-black font-semibold" for="name">Full Name*</label>
+                <label className="text-black font-semibold block" for="name">Full Name*</label>
                 <input className="bg-slate-100 h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 rounded-xl outline-none focus:border-indigo-300" type="text" placeholder='Your full name' required />
             </div>
             <div className="w-full">
-                <label className="text-black font-semibold" for="name">Email*</label>
+                <label className="block text-black font-semibold" for="name">Email*</label>
                 <input className="bg-slate-100 h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 rounded-xl outline-none focus:border-indigo-300" type="email" placeholder='Your.email@example.com' required />
             </div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-8 w-[500px] md:w-[700px]">
             <div className="w-full">
-                <label className="text-black font-semibold" for="name">Phone Number</label>
+                <label className="text-black font-semibold block" for="name">Phone Number</label>
                 <input className="h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="tel" placeholder='08148047998' required />
             </div>
             <div className="w-full">
-                <label className="text-black font-semibold" for="name">Event Date</label>
+                <label className="text-black font-semibold block" for="name">Event Date</label>
                 <input className="h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="date" placeholder='' required />
             </div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-8 w-[500px] md:w-[700px]">
             <div className="w-full relative">
-                <label className="text-black font-semibold" for="name">Event Type</label>
+                <label className="text-black font-semibold block" for="name">Event Type</label>
                 <input className="h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="text" value={selected} onClick={() => setIsOpen(!isOpen)} required
        
                 />
