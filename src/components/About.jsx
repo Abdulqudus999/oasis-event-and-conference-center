@@ -14,7 +14,7 @@ const About = () => {
         <h3 className='text-xl md:text-2xl font-bold mb-2'>
           Your Dreams, Our Expertise
         </h3>
-        <p className='text-neutral-800 text-xl mb-3 max-w-6xl leading-5 md:leading-normal'>At Oasis Event Hall, we believe every celebration deserves to be extraordinary. With our elegance venues, exceptional services, and attention to detail, we transform your vision into reality.</p>
+        <p className='text-neutral-800 text-xl mb-3 max-w-6xl leading-5.5 md:leading-normal'>At Oasis Event Hall, we believe every celebration deserves to be extraordinary. With our elegance venues, exceptional services, and attention to detail, we transform your vision into reality.</p>
         <ul className='ml-2'>
           <li className='flex items-center gap-2 text-xl mb-2'>
             <LuCircleCheckBig className='text-blue-800 w-[24px] font-bold' />
