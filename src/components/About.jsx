@@ -17,22 +17,22 @@ const About = () => {
         <p className='text-neutral-800 text-xl mb-3 max-w-6xl leading-5.5 md:leading-normal'>At Oasis Event Hall, we believe every celebration deserves to be extraordinary. With our elegance venues, exceptional services, and attention to detail, we transform your vision into reality.</p>
         <ul className='ml-2'>
           <li className='flex items-center gap-2 text-xl mb-2'>
-            <LuCircleCheckBig className='text-blue-800 w-[24px] font-bold' />
+            <LuCircleCheckBig size={25} className='text-blue-800 w-[24px] font-bold' />
             Climate-controlled environment</li>
           <li className='flex items-center gap-2 text-xl mb-2'>
-            <LuCircleCheckBig className='text-blue-800 w-[24px] font-bold' />
+            <LuCircleCheckBig size={25} className='text-blue-800 w-[24px] font-bold' />
             Professional lightning and sound system</li>
           <li className='flex items-center gap-2 text-xl mb-2'>
-            <LuCircleCheckBig className='text-blue-800 w-[24px] font-bold' />
+            <LuCircleCheckBig size={25} className='text-blue-800 w-[24px] font-bold' />
             Customizable decor options</li>
           <li className='flex items-center gap-2 text-xl mb-2'>
-            <LuCircleCheckBig className='text-blue-800 w-[24px] font-bold' />
+            <LuCircleCheckBig size={25} className='text-blue-800 w-[24px] font-bold' />
             Dedicated Event Coordinator</li>
           <li className='flex items-center gap-2 text-xl mb-2'>
-            <LuCircleCheckBig className='text-blue-800 w-[24px] font-bold' />
+            <LuCircleCheckBig size={25} className='text-blue-800 w-[24px] font-bold' />
             Catering Kitchen facilities</li>
           <li className='flex items-center gap-2 text-xl mb-2'>
-            <LuCircleCheckBig className='text-blue-800 w-[24px] font-bold' /> 
+            <LuCircleCheckBig size={25} className='text-blue-800 w-[24px] font-bold' /> 
             Ample Parking space</li>
         </ul>
       </div>

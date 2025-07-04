@@ -42,18 +42,17 @@ const FooterSection = () => {
                 <h2 className="font-bold text-white text-lg md:text-xl mb-5">Get in touch</h2>
                 <div className="">
                     <div className='flex gap-1'>
-                        <FaPhone className='font-bold' />
+                        <FaPhone size={20} className='font-bold' />
                         <p>Phone</p>
                     </div>
                     <a href="#">09162646605</a>
                 </div>
                 <div className="">
                     <div className='flex gap-1'>
-                        <IoMailOutline className='font-bold' />
+                        <IoMailOutline size={20} className='font-bold' />
                         <p>Email</p>
                     </div>
-                    
-                    <a href="#" mailto='oasiseventhallagmail.com'>Oasis</a>
+                    <a href="#" mailto='oasiseventhallagmail.com'>Oasiseventandconference@gmail.com</a>
                 </div>
                 
             </div>

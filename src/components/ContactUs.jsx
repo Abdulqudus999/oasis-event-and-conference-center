@@ -112,14 +112,14 @@ const ContactUs = () => {
             )}
             </div>
             <div className="w-full">
-                <label className="text-black font-semibold" for="name">Guest Count</label>
-                <input className="h-12 p-2 mt-1 w-full border border-gray-500/30 bg-gray-100 rounded-xl outline-none focus:border-indigo-300" type="number" required />
+                <label className="text-black font-semibold block" for="name">Guest Count</label>
+                <input className="h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 bg-gray-100 rounded-xl outline-none focus:border-indigo-300" type="number" required />
             </div>
         </div>
     
         <div className="mt-6 w-[500px] md:w-[700px]">
-            <label className="text-black font-semibold" for="name">Additional Details</label>
-            <textarea className="w-full mt-2 p-2 h-40 border border-gray-500/30 bg-slate-100 rounded-xl resize-none outline-none focus:border-indigo-300" placeholder='Tell us more about your event...' required></textarea>
+            <label className="text-black font-semibold block" for="name">Additional Details</label>
+            <textarea  className="w-full max-w-sm row mt-2 p-2 h-40 border border-gray-500/30 bg-slate-100 rounded-xl resize-none outline-none focus:border-indigo-300" placeholder='Tell us more about your event...' rows={20} required></textarea>
         </div>
 
     <button type="submit" className="mt-5 bg-indigo-600 text-white h-12 w-[500px] md:w-[700px] px-4 rounded active:scale-95 transition">Send 
