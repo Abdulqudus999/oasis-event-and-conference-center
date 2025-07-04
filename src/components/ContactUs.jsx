@@ -18,7 +18,7 @@ const ContactUs = () => {
 
   return (
     <section id='contact' className='mb-64 mt-14'>
-      <div className='mb-12'>
+      <div className='mb-12 mx-2'>
         <h2  className='font-bold text-2xl md:text-4xl tracking-wider mb-2 text-center'>Contact Us & Book Your Event</h2>
         <p className='text-neutral-800 tracking-wider text-center'>Ready to plan your perfect event? Get in touch with us or book directly</p>
       </div>
@@ -71,11 +71,11 @@ const ContactUs = () => {
         </div>
       </div>
       
-  <form className="flex flex-col items-center mt-20 py-10 max-w-7xl mx-auto bg-slate-200 rounded-br-lg rounded-tl-lg">
+  <form className="flex flex-col items-center mt-20 py-10 px-6 max-w-7xl mx-auto bg-slate-200 rounded-br-lg rounded-tl-lg">
     <h2 class=" text-xl md:text-2xl font-semibold text-slate-950 pb-4">Request 
       Information
     </h2>
-        <div className="flex flex-col md:flex-row items-center gap-8 w-[500px] md:w-[700px]">
+        <div className="flex flex-col md:flex-row items-center gap-1 mx-auto md:gap-8 w-[500px] md:w-[700px]">
             <div className="w-full">
                 <label className="text-black font-semibold block" for="name">Full Name*</label>
                 <input className="bg-slate-100 h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 rounded-xl outline-none focus:border-indigo-300" type="text" placeholder='Your full name' required />
@@ -85,7 +85,7 @@ const ContactUs = () => {
                 <input className="bg-slate-100 h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 rounded-xl outline-none focus:border-indigo-300" type="email" placeholder='Your.email@example.com' required />
             </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-8 w-[500px] md:w-[700px]">
+        <div className="flex flex-col md:flex-row items-center gap-1 mx-auto md:gap-8 w-[500px] md:w-[700px]">
             <div className="w-full">
                 <label className="text-black font-semibold block" for="name">Phone Number</label>
                 <input className="h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="tel" placeholder='08148047998' required />
@@ -95,7 +95,7 @@ const ContactUs = () => {
                 <input className="h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="date" placeholder='' required />
             </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-8 w-[500px] md:w-[700px]">
+        <div className="flex flex-col md:flex-row items-center gap-1 md:gap-8 mx-auto w-[500px] md:w-[700px]">
             <div className="w-full relative">
                 <label className="text-black font-semibold block" for="name">Event Type</label>
                 <input className="h-12 p-2 mt-1 w-full max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="text" value={selected} onClick={() => setIsOpen(!isOpen)} required
@@ -117,12 +117,12 @@ const ContactUs = () => {
             </div>
         </div>
     
-        <div className="mt-6 w-[500px] md:w-[700px]">
+        <div className="mt-6 w-[500px] md:w-[700px] mx-auto">
             <label className="text-black font-semibold block" for="name">Additional Details</label>
-            <textarea  className="w-full max-w-sm row mt-2 p-2 h-40 border border-gray-500/30 bg-slate-100 rounded-xl resize-none outline-none focus:border-indigo-300" placeholder='Tell us more about your event...' rows={20} required></textarea>
+            <textarea  className="w-full max-w-sm mt-2 p-2 h-40 border border-gray-500/30 bg-slate-100 rounded-xl resize-none outline-none focus:border-indigo-300" placeholder='Tell us more about your event...' rows={20} required></textarea>
         </div>
 
-    <button type="submit" className="mt-5 bg-indigo-600 text-white h-12 w-[500px] md:w-[700px] px-4 rounded active:scale-95 transition">Send 
+    <button type="submit" className="max-w-sm mt-5 bg-indigo-600 text-white h-12 w-[500px] md:w-[700px] px-4 rounded active:scale-95 transition">Send 
       inquiry
     </button>
 </form>

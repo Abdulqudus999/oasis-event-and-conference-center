@@ -83,14 +83,14 @@ const BackgroundCarousel = () => {
               Veiw Gallery
             </a>
           </div>
-          <div className='flex justify-around mt-10'>
-            <span className='flex items-center gap-1'>
+          <div className='flex justify-around gap-1.5 mt-10'>
+            <span className='flex items-center'>
               <GoPeople className='text-blue-700' />
               500+ Capacity</span>
-            <span className='flex items-center gap-1'>
+            <span className='flex items-center'>
               <FaRegStar className='text-blue-700' />
               5-Service</span>
-            <span className='flex items-center gap-1'>
+            <span className='flex items-center'>
               <IoLocationOutline className='text-blue-700' />
               Prime Location</span>
           </div>

@@ -93,7 +93,7 @@ const SevicesSection = () => {
             
             {/* Overlay */}
             <div className="absolute grid place-items-center inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent">
-              <ol className="bg-white/80 backdrop-blur-md absolute flex flex-col gap-2 bottom-9 px-3 text-slate-950 font-semibold text-xl rounded-md border border-white/55">
+              <ol className="bg-white/80 backdrop-blur-md absolute flex flex-col gap-2 bottom-9 px-3 text-slate-800 font-semibold text-lg md:text-xl rounded-md border border-white/55">
                 <li className='flex items-center'>
                   <GoDot className='mr-1' />
                   {serviceImage.info1}</li>

@@ -17,12 +17,12 @@ const Navbar = () => {
       <nav class="h-[70px] fixed w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-50 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
         
     <a href="#" className='flex items-center justify-center'>
-      <img src={palmlogo1} alt="" className='w-10' />
+      <img src={palmlogo1} alt="" className='w-10 -mr-0.5' />
       <div>
         <span className='text-3xl bg-gradient-to-r from-blue-950 to-blue-300 block bg-clip-text bg-transparent font-bold tracking-wider'>Oasis</span>
         <span className='block text-sm text-blue-700 tracking-tight -mt-2 font-bold'>Event Center</span>
       </div>
-      <img src={palmlogo2} alt=""  className='w-10 -ml-1'/>
+      <img src={palmlogo2} alt=""  className='w-10 -ml-2'/>
     </a>
 
     <ul class="md:flex hidden items-center gap-10">

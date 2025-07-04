@@ -40,19 +40,19 @@ const FooterSection = () => {
         <div>
             <div className='flex flex-col items-center'>
                 <h2 className="font-bold text-white text-lg md:text-xl mb-5">Get in touch</h2>
-                <div className="">
+                <div className="flex flex-col gap-1 mb-5">
                     <div className='flex gap-1'>
-                        <FaPhone size={20} className='font-bold' />
+                        <FaPhone size={20} className='font-black text-white' />
                         <p>Phone</p>
                     </div>
                     <a href="#">09162646605</a>
                 </div>
-                <div className="">
+                <div className=" flex flex-col gap-1" >
                     <div className='flex gap-1'>
-                        <IoMailOutline size={20} className='font-bold' />
+                        <IoMailOutline size={20} className='font-black text-white' />
                         <p>Email</p>
                     </div>
-                    <a href="#" mailto='oasiseventhallagmail.com'>Oasiseventandconference@gmail.com</a>
+                    <a href="#">Oasiseventandconference@gmail.com</a>
                 </div>
                 
             </div>
