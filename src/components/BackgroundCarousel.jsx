@@ -65,7 +65,7 @@ const BackgroundCarousel = () => {
       ))}
 
       {/* Content overlay */}
-      <div className="relative z-10 flex items-center justify-center h-full">
+      <div className="relative top-5 z-10 flex items-center justify-center h-full">
         <div className="bg-white/50 backdrop-blur-md py-5 mx-4 my-5 text-center rounded-md px-8 max-w-4xl border border-white/55">
           <h1 className="text-3xl md:text-5xl font-bold mb-5 animate-fade-in text-gray-700">
             Welcome to <span className='text-blue-800 font-black animate-spin'>Oasis</span> 

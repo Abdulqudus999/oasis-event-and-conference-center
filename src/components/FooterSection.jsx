@@ -37,22 +37,22 @@ const FooterSection = () => {
             </div>
             
         </div>
-        <div>
-            <div className='flex flex-col items-center'>
+        <div className='flex'>
+            <div className='flex flex-col'>
                 <h2 className="font-bold text-white text-lg md:text-xl mb-5">Get in touch</h2>
                 <div className="flex flex-col gap-1 mb-5">
-                    <div className='flex gap-1'>
+                    <div className='flex gap-1 font-bold'>
                         <FaPhone size={20} className='font-black text-white' />
                         <p>Phone</p>
                     </div>
                     <a href="#">09162646605</a>
                 </div>
-                <div className=" flex flex-col gap-1" >
-                    <div className='flex gap-1'>
+                <div className="flex flex-col gap-1" >
+                    <div className='flex gap-1 font-bold'>
                         <IoMailOutline size={20} className='font-black text-white' />
                         <p>Email</p>
                     </div>
-                    <a href="#">Oasiseventandconference@gmail.com</a>
+                        <a>oasisevent-and-conference-center@gmail.com</a>
                 </div>
                 
             </div>
