@@ -72,7 +72,9 @@ const SevicesSection = () => {
   return (
     <section className='mt-14' id='services'>
       <div className='mb-6'>
-        <h2  className='font-bold text-2xl md:text-4xl tracking-wider mb-2 text-center'>Our Services</h2>
+        <h2  className='font-bold text-2xl md:text-4xl tracking-wider mb-2 text-center relative'>Our Services
+          <span className='h-0.5 w-1/4 left-[50%] -bottom-0.5 absolute transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-blue-800 via-green-500 to-orange-500'></span>
+        </h2>
         <p className='text-neutral-800 tracking-wider text-center'>Every thing you need for a perfect event all under one roof</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-6">

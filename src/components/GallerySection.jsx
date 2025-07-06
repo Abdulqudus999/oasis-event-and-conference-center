@@ -44,7 +44,9 @@ const GallerySection = () => {
   return (
     <section className='mt-14' id='gallery'>
       <div className='mb-6'>
-        <h2  className='font-bold text-2xl md:text-4xl tracking-wider mb-2 text-center'>Event Gallery</h2>
+        <h2  className='font-bold text-2xl md:text-4xl tracking-wider mb-2 text-center relative'>Event Gallery
+          <span className='h-0.5 w-1/4 left-[50%] -bottom-0.5 absolute transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-blue-800 via-green-500 to-orange-500'></span>
+        </h2>
         <p className='text-neutral-800 tracking-wider text-center'>Discover the beauty and elegance of our venues</p>
       </div>
       

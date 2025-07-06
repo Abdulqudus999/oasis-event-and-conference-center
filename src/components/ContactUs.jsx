@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const ContactUs = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-    const [selected, setSelected] = React.useState("Select  >");
+    const [selected, setSelected] = React.useState(`Select >`);
 
     const events = ["Wedding Ceremony", "Graduation", "Naming Ceremony", "Meeting", "Summit"];
 
@@ -19,12 +19,14 @@ const ContactUs = () => {
   return (
     <section id='contact' className='mb-64 mt-14'>
       <div className='mb-12 mx-2'>
-        <h2  className='font-bold text-2xl md:text-4xl tracking-wider mb-2 text-center'>Contact Us & Book Your Event</h2>
+        <h2  className='font-bold text-2xl md:text-4xl tracking-wider mb-2 text-center relative'>Contact Us & Book Your Event
+          <span className='h-0.5 w-1/4 left-[50%] -bottom-0.5 absolute transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-blue-800 via-green-500 to-orange-500'></span>
+        </h2>
         <p className='text-neutral-800 tracking-wider text-center'>Ready to plan your perfect event? Get in touch with us or book directly</p>
       </div>
       <div className='mx-auto px-4'>
         <div className='flex items-center justify-center gap-4 mb-10'>
-            <button className='flex items-center gap-2 text-white bg-blue-800 hover:bg-blue-600 transition-colors font-semibold px-3 py-2 rounded-md'>
+            <button className='flex items-center gap-2 text-white bg-blue-800 hover:bg-blue-600 transition-colors font-semibold border border-blue-500 px-3 py-2 rounded-md'>
               <FaCalendarDay />
               Book Now
               </button>
@@ -70,61 +72,78 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-       <form className="flex flex-col items-center mt-20 py-10 px-6 bg-slate-200 rounded-br-lg rounded-tl-lg overflow-hidden">
-    <h2 class=" text-xl md:text-2xl font-semibold text-slate-950 pb-4">Request 
-      Information
-    </h2>
-        <div className="flex flex-col md:flex-row items-center gap-1 mx-auto md:gap-8 w-[500px] md:w-[700px]">
-            <div className="w-full">
-                <label className="text-black font-semibold block" for="name">Full Name*</label>
-                <input className="w-full bg-slate-100 h-12 p-2 mt-1 max-w-sm border border-gray-500/30 rounded-xl outline-none focus:border-indigo-300" type="text" placeholder='Your full name' required />
-            </div>
-            <div className="w-full">
-                <label className="block text-black font-semibold" for="name">Email*</label>
-                <input className="w-full bg-slate-100 h-12 p-2 mt-1 max-w-sm border border-gray-500/30 rounded-xl outline-none focus:border-indigo-300" type="email" placeholder='Your.email@example.com' required />
-            </div>
+      <form action="" className='max-w-4xl mx-auto bg-gray-200 rounded-lg shadow-lg py-8 px-4 mt-20 overflow-hidden'>
+        <div className=''>
+          <h3 className='text-xl md:text-2xl font-semibold text-slate-950'>Request Information</h3>
+          <p className=''>Please fill out the form below to get in touch with us</p>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-1 mx-auto md:gap-8 w-[500px] md:w-[700px]">
-            <div className="w-full">
-                <label className="text-black font-semibold block" for="name">Phone Number</label>
-                <input className="w-full h-12 p-2 mt-1 max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="tel" placeholder='08148047998' required />
-            </div>
-            <div className="w-full">
-                <label className="text-black font-semibold block" for="name">Event Date</label>
-                <input className="w-full h-12 p-2 mt-1 max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="date" placeholder='' required />
-            </div>
-        </div>
-        <div className="flex flex-col md:flex-row items-center gap-1 md:gap-8 mx-auto w-[500px] md:w-[700px]">
-            <div className="relative w-full">
-                <label className="text-black font-semibold block" for="name">Event Type</label>
-                <input className="w-full h-12 p-2 mt-1 max-w-sm border border-gray-500/30 bg-slate-100 rounded-xl outline-none focus:border-indigo-300" type="text" value={selected} onClick={() => setIsOpen(!isOpen)} required
-       
-                />
-                {isOpen && (
-                <ul className="absolute w-full top-full z-50 bg-white border border-blue-800 rounded shadow-md mt-1 py-2">
+        <div className='p-4 md:p-6'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6'>
+          <div className='space-y-2'>
+            <label htmlFor="" className='block text-sm font-medium text-gray-900'>
+              Full Name*
+            </label>
+            <input type="text" placeholder='Full Name' className='w-full px-3 bg-slate-100 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200' />
+          </div>
+          <div className='space-y-2'>
+            <label htmlFor="" className='block text-sm font-medium text-gray-900'>
+              Email*
+            </label>
+            <input type="email" placeholder='example@gmail.com' className='w-full px-3 bg-slate-100 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200' />
+          </div>
+          <div className='space-y-2'>
+            <label htmlFor="" className='block text-sm font-medium text-gray-900'>
+              Phone Number*
+            </label>
+            <input type="tel" placeholder='09162646605' className='w-full px-3 bg-slate-100 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200' />
+          </div>
+          <div className='space-y-2'>
+            <label htmlFor="" className='block text-sm font-medium text-gray-900'>
+              Event Date
+            </label>
+            <input type="date" className='w-full px-3 bg-slate-100 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200' />
+          </div>
+          <div className='space-y-2 relative'>
+            <label htmlFor="" className='block text-sm font-medium text-gray-900'>
+              Event type
+            </label>
+            <input type="text" value={selected} onClick={() => setIsOpen(!isOpen)} className='w-full px-3 bg-slate-100 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200' />
+            {
+              isOpen && (
+                <ul className="absolute w-full top-full z-50 bg-white border border-blue-800 rounded shadow-md py-2">
                     {events.map((event) => (
                         <li key={event} className="px-4 py-2 hover:bg-indigo-500 hover:text-white cursor-pointer" onClick={() => handleSelect(event)} >
                             {event}
                         </li>
                     ))}
                 </ul>
-            )}
-            </div>
-            <div className="w-full">
-                <label className="text-black font-semibold block" for="name">Guest Count</label>
-                <input className="w-full h-12 p-2 mt-1 max-w-sm border border-gray-500/30 bg-gray-100 rounded-xl outline-none focus:border-indigo-300" type="number" required />
-            </div>
-        </div>
-    
-        <div className="mt-6 w-[500px] md:w-[700px] mx-auto">
-            <label className="text-black font-semibold block" for="name">Additional Details</label>
-            <textarea  className="w-full mt-2 p-2 h-40 border border-gray-500/30 bg-slate-100 rounded-xl resize-none outline-none focus:border-indigo-300" placeholder='Tell us more about your event...' required></textarea>
-        </div>
+            )
+            }
+          </div>
+          <div className='space-y-2'>
+            <label htmlFor="" className='block text-sm font-medium text-gray-900'>
+              Guest Count
+            </label>
+            <input type="number" placeholder='0' className='w-full px-3 bg-slate-100 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200' />
+          </div>
+          </div>
+          <div className='mt-5 space-y-2'>
+            <label htmlFor="" className='block text-sm font-medium text-gray-900'>Additional Details</label>
+            <textarea name="" placeholder='Tell us more about your event...' className='w-full px-3 bg-slate-100 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 resize-none' rows={6} id=""></textarea>
+          </div>
+          <div className='flex justify-center mt-3'>
+            <button className='w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md shadow-sm transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 active:scale-95'>
+              Send Inquiry
+            </button>
+          </div>
+      </div>
+        
 
-    <button type="submit" className="mt-5 bg-indigo-600 text-white h-12 w-full md:w-[700px] px-4 rounded active:scale-95 transition">Send 
-      inquiry
-    </button>
-</form>
+      </form>      
+
+
+    
+           
       
     </section>
   )

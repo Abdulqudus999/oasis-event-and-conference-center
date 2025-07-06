@@ -7,7 +7,9 @@ const About = () => {
   return (
     <section className='mt-14'  id='about'>
       <div className='text-center mb-4'>
-        <h2 className='font-bold text-2xl md:text-4xl tracking-wider mb-2'>About Oasis Event Hall</h2>
+        <h2 className='font-bold text-2xl md:text-4xl tracking-wider mb-2 relative'>About Oasis Event Hall
+          <span className='h-0.5 w-1/4 left-[50%] -bottom-0.5 absolute transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-blue-800 via-green-500 to-orange-500'></span>
+        </h2>
         <p className='text-neutral-800 tracking-wider'>Creating extraordinary experience for you</p>
       </div>
       <div className='px-4 '>
