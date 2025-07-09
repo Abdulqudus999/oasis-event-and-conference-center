@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const ContactUs = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-    const [selected, setSelected] = React.useState(`Select >`);
+    const [selected, setSelected] = React.useState(`Select Event Type  >`);
 
     const events = ["Wedding Ceremony", "Graduation", "Naming Ceremony", "Meeting", "Summit"];
 

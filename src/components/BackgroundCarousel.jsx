@@ -67,7 +67,7 @@ const BackgroundCarousel = () => {
       {/* Content overlay */}
       <div className="relative top-5 z-10 flex items-center justify-center h-full">
         <div className="bg-white/50 backdrop-blur-md py-5 mx-4 my-5 text-center rounded-md px-8 max-w-4xl border border-white/55">
-          <h1 className="text-3xl md:text-5xl font-bold mb-5 animate-fade-in text-gray-700">
+          <h1 className="text-3xl md:text-5xl font-bold mb-5 text-gray-700">
             Welcome to <span className='text-blue-800 font-black animate-spin'>Oasis</span> 
           </h1>
           <p className="text-xl md:text-2xl mb-5 opacity-90">
@@ -84,7 +84,7 @@ const BackgroundCarousel = () => {
             </a>
           </div>
           <div className='flex justify-around gap-1.5 mt-10'>
-            <span className='flex items-center'>
+            <span className='flex items-center tracking-tight'>
               <GoPeople className='text-blue-700' />
               500+ Capacity</span>
             <span className='flex items-center'>
@@ -107,7 +107,7 @@ const BackgroundCarousel = () => {
       
       <button
         onClick={goToNext}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-full transition-all duration-300"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-30 p-2 md:p-3 rounded-full transition-all duration-300"
       >
         <ChevronRight size={24}/>
       </button>
